@@ -1,0 +1,7 @@
+when you make a pure backend appl
+then once the appl starts and connects to the backend it keeps running and that's why we use cloud instances 
+so that its running all the time
+but nextjs is an edge time framework
+and it only makes connnetions when demand is there
+therfore db is not connnected always so we need to make a connection whenever a req arises 
+if there are multiple concurrent requests at a time ten there is a chance that there exists a connection and therefore if we make multiple connections it might choke the appl and therefore w need to check before making a newe connection if there is an existing connection already then use that one oterwise make a  new one
